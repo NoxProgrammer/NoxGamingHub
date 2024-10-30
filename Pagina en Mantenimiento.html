@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página en Construcción - Shop</title>
+    <link rel="icon" href="LogoN.webp" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0a0a0a;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .number {
+            font-size: 120px;
+            font-weight: bold;
+            color: #fff;
+            margin: 0;
+            position: relative;
+            text-shadow: 2px 2px 0 #9333EA;
+            animation: bounce 2s infinite;
+        }
+
+        .message {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        .tools {
+            margin-top: 30px;
+            font-size: 40px;
+        }
+
+        .progress-bar {
+            width: 300px;
+            height: 20px;
+            background: #1a1a1a;
+            margin: 30px auto;
+            border: 2px solid #9333EA;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .progress {
+            width: 30%;
+            height: 100%;
+            background: #9333EA;
+            animation: progress 3s infinite;
+        }
+
+        .pixel-character {
+            font-size: 50px;
+            margin-top: 20px;
+            animation: work 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @keyframes progress {
+            0% {
+                width: 0%;
+                background: #9333EA;
+            }
+            50% {
+                width: 60%;
+                background: #A855F7;
+            }
+            100% {
+                width: 30%;
+                background: #9333EA;
+            }
+        }
+
+        @keyframes work {
+            0%, 100% {
+                transform: rotateZ(0deg);
+            }
+            50% {
+                transform: rotateZ(10deg);
+            }
+        }
+
+        .gaming-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            opacity: 0.1;
+            background: 
+                radial-gradient(circle at 10% 20%, transparent 0, transparent 2px, #9333EA 2px, transparent 3px) 0 0/50px 50px,
+                radial-gradient(circle at 90% 80%, transparent 0, transparent 2px, #9333EA 2px, transparent 3px) 0 0/50px 50px;
+        }
+
+        .status {
+            color: #A855F7;
+            font-size: 18px;
+            margin-top: 20px;
+            font-family: monospace;
+        }
+
+        .controls {
+            margin-top: 30px;
+            font-family: monospace;
+            color: #666;
+        }
+
+        .controls span {
+            margin: 0 10px;
+            border: 1px solid #666;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="gaming-elements"></div>
+    <div class="container">
+        <h1 class="number">404</h1>
+        <div class="pixel-character">🛠️</div>
+        <p class="message"><a>Pronto en la Oscuridad…</a><br><br>Estamos afinando los últimos detalles. La espera será breve. ¡Pronto descubrirás el enigma!</p>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="status">
+            > Cargando recursos_gaming.exe...
+        </div>
+        <div class="controls">
+            <span>W</span>
+            <span>A</span>
+            <span>S</span>
+            <span>D</span>
+            <span>SPACE</span>
+        </div>
+    </div>
+</body>
+</html>
